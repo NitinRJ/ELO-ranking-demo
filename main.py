@@ -58,8 +58,8 @@ def matching(PlayerA):
 
         best_opponent = second_highest
 
-        print(highest)
-        print(second_highest)
+        #print(highest)
+      #  print(second_highest)
     best_opponent_rating = rating(my_dict[best_opponent])
     ProbabilityA = 1 / (1 + 10 ** ((best_opponent_rating - player_a_rating) / 400))
     ProbabilityB = 1 - ProbabilityA
@@ -94,8 +94,8 @@ def findAmatch():
 
 
 
-with open('example_1.json','r') as f:
-    my_dict1 = json.load(f)
+#with open('example_1.json','r') as f:
+   # my_dict1 = json.load(f)
 
 
 findAmatch()
